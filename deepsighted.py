@@ -2,7 +2,13 @@ import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 import sys
+import pyfiglet
 
+
+
+ascii_banner = pyfiglet.figlet_format("Unsighted")
+print(ascii_banner)
+print("Created by @Yugi")
 # Function to test for LFI vulnerability
 def test_lfi_vulnerability(url):
     print("Testing for Local File Inclusion vulnerability on:", url)
